@@ -14,6 +14,5 @@ async function init() {
 
 db.connect((err) => {
     if (err) throw err;
-    console.log(err);
     init();
 })
