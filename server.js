@@ -1,19 +1,19 @@
-const express = require('express');
-const mysql = require('mysql2');
-require('dotenv').config();
+const db = require('./config/connection');
+const inquire = require('./lib/inquire');
 
-const PORT = process.env.PORT || 3001;
-const app = express();
+async function init() {
+    console.log('Welcome to the Employee Tracker App');
 
-app.use(express.urlencoded({ extended: false }));
-app.use(express.json());
+    try {
+        await inquire.init();
+    }
+    catch (err) {
+        console.log(err);
+    }
+}
 
-const db = mysql.createConnection(
-    {
-        host: 'localhost',
-        user: process.env.DB_USER,
-        password: process.env.DB_PW,
-        database: process.env.DB_NAME
-    },
-    console.log('Connected to the employees database')
-);
+db.connect((err) => {
+    if (err) throw err;
+    console.log(err);
+    init();
+})
