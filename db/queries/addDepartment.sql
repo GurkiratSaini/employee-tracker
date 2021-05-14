@@ -1,1 +1,1 @@
-INSERT INTO department VALUES ?;
+INSERT INTO department SET ?;
