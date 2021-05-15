@@ -3,6 +3,14 @@
 
   ## Description
   This is a Node.js app built with Inuqirer and MySQL2 packages that simulates an employee database back-end.
+  This app is not being deployed. To run this app, please follow the instructions in the [Installation](#installation) section.
+
+  ## Application Screenshot
+  ![Screenshot](./assets/screenshot.png?raw=true)
+  
+  ## Video Walkthrough
+  A video walkthrough of the application can be found at this link: 
+  [Video Walkthrough](https://drive.google.com/file/d/1gvHjb_RZ5IlOgSTTRL7YUZuf_TDZwtrG/view?usp=sharing)
 
   ## Table of Contents
   - [Installation](#installation)
